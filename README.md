@@ -70,5 +70,53 @@ Um serviço de orquestração para conteineres com arquiteturas distribuidas e g
 ### Azure function 
 Uma oferta de Paas que da suporte a operações de computação sem servidor.
 O codigo baseado em eventos é executado quando chamado, sem exigir uma infraestrutura de servidor durante períodos inativos.
-## Redes Virtuais
 
+## Armazenamento
+### Contas de armazenamento
+Nome globalmente exclusivo. Como se fosse o cpf, tem que ter de 3 a 24 caracteres.
+Fornecer acesso à internet em todo o mundo.
+Deterninar os serviços de armazenamentos e as opções de redudância.
+#### Configurar a redudancia de armazenamento
+LRS (armazenamento com redudância local) - Datacenter individual na região primária. Durabilidade: 11 noves.
+ZRS (armazenamento com redudância de zona) - Três zonas de disponibilidades na região primária. Durabilidade: 12 noves.
+GRS (armazenamento com redudância geográfica) - Datacenter único no primário e região secundária. Durabilidade: 16 noves.
+GZRS (armazenamento com redudância de zona geográfica) - Três zonas de disponibilidades na região primária e um único datacenters da região secundária. Durabilidade: 16 noves.
+#### Storage account
+1. Blob do Azure - otimizado para o armazenamento de quantidade massivas de dados não estruturados,como texto ou dados binários.
+2. Disco do Azure - fornece discos para maquinas virtuais, aplicativos e outros serviços acessarem e utilizarem. Podemos adicionar discos a quente, sem precisar para nossas maquinas ou serviços.
+3. Fila do Azure - serviço de armazenamento de mensagens que fornece armazenamento e recuperação para grandes quantidades de mensagens, cada uma com até kb.
+4. Tabelas do Azure - fornece a opção de chave/atributo para o armazenamento de dados estruturados não relacionais com um designe sem esquema.
+
+Pontos de extremidade públicos do serviço de armazenamentos:
+https://<storage-account-name>.blob.core.windows.net
+https://<storage-account-name>.dfs.core.windows.net
+https://<storage-account-name>.file.core.windows.net
+https://<storage-account-name>.queue.core.windows.net
+https://<storage-account-name>.table.core.windows.net
+
+Camadas de acesso de armazenamento do Azure
+Influenciam nos custos
+1. Frequente - Otimizada para armazenamento de dados acessados com freqência.
+2. Esporádico - Otimizada para armazenamento de dados com pouca frequencia e armazenados pelo menos 30 dias.
+3. Frio - Otimizado para o armazenamentos de dados acessados com pouca frequencia e armazenados por pelo menos 90 dias.
+4. Arquivo morto - Otimizada para o armazenamento de dados acessados raramente e armazenados por pelo menos 180 dias com requisitos de latência fléxiveis.
+
+#### Azure data box
+Serviço de migração fisica de dados, até 80TB de dados. Proteje os dados criptografados em uma caixa robusta dutante o trânsito. 
+Migre dados do Azure para conformidades ou necessidades regulatorias.
+Migre dados para o Azure do locais remotos com conectividade limitada ou sem conectividade.
+
+#### azcopy
+utilitario de linha de comando
+copiar blobs ou arquivos de ou para sua conta de armazenamento
+sicronização em uma direção
+
+#### Gerenciador de armazenamento  
+Interface gráfica do usuário (de modo semelhante ao windows explore)
+Compativel com o windows, macOs e linux.
+Mais amigavél que o azcopy
+
+#### Sicronização de arquivos
+Sicroniza os arquivos do Azure e locais de forma bidirecional.
+A camada de nuvem mantem os arquivos acessados com frenquencia no local, enquanto libera espaço.
+caches, smb,nfs,ftps
