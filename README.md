@@ -37,3 +37,15 @@ Para criar um banco de dados no portal do azure, clica no "+", criar um recurso,
 Aqui temos diversas opções de banco de dados como: Azure cosmos SQL, Azure SQL, SQL Server, Mysql, Postgres, SQL Database entre outros.
 
 Exemplo ao criar um SQL Database, voce escolhe o nome e voce deve selecionar um servidor lógico, se não tiver criar, temos a opção de criar um nome lo link abaixo do campo, depois voce configura se usará um pool elástico, se será um banco de desenvolvimento ou de produção, configura a computação e o armazenamento e por fim o sistema de redundancia desejado. Lembrando que quanto mais recursos usamos, maiores são os custos.
+
+## Datacenter
+No link [https://datacenters.microsoft.com](https://datacenters.microsoft.com/) podemos obter todas as informações sobre os datacenters existentes e os que estão sendo projetados. Também podemos vizualizar o globo, uma visão extrordinaria de todos os datacenters expalhados pelo globo e suas ligações. Ao clicar em cada datacenter obtemos as informações dele como: A localização, qual sua área de replicamento, ano de criação, zonas de disponibilidade, produtos disponiveis, disaster recovery, entre outras.
+
+O brasil conta com as regiões Brazil South (São Paulo) e Brazil Southeast (Rio de Janeiro), porém, a região Brazil Southeast não conta com todos os recursos e é usada para o recurso de disaster recovery nos casos em que a LGPD não permite que os dados estejam fora do Brasil.
+
+## Grupo de recursos
+Um grupo de recursos é uma coleção de recursos que compartilha o mesmo ciclo de vida, permissões e políticas.
+Podemos definir niveis de acesso para os usuários para poder adicionar, editar ou excluir um recurso do grupo.
+
+## Redes Virtuais
+
