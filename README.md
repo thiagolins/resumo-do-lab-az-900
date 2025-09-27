@@ -73,7 +73,7 @@ O codigo baseado em eventos é executado quando chamado, sem exigir uma infraest
 
 ## Armazenamento
 ### Contas de armazenamento
-Nome globalmente exclusivo. Como se fosse o cpf, tem que ter de 3 a 24 caracteres.
+Nome globalmente exclusivo. Como se fosse o cpf, tem que ter de 3 a 24 caracteres, letras minusculas e numeros.
 Fornecer acesso à internet em todo o mundo.
 Deterninar os serviços de armazenamentos e as opções de redudância.
 #### Configurar a redudancia de armazenamento
