@@ -32,6 +32,11 @@ Ao clicar para criar uma maquina virtual, diversas opções de customização ap
 Podemos definir a região onde estará hospedando o projeto, o que pode melhorar significativamente o tempo de resposta dos seus usuário, podendo ser escolhidos mais de um local, que melhora a disponibilidade e o tempo de resposta, porem, quanto mais recursos adicionamos maior o valor a ser pago.
 Tambem temos a escolha do sistema operacional de diversos linux e windows.
 
+Na criação de uma nova maquinas podemos escolher entre maquinas em branco e em maquinas com configurações predefinidas, que são maquinas que já estão prontas para uso, com memoria, processador e armazenamento já configurados e objetivos como maquina para teste, para desenvolvimento, para produção. Porem, se voce quer ter mais customização, cria uma maquina virtual zerada e configurar manualmente a regiao, as opções de disponibilidades, o conjunto de dimensionamento, tipo de segurança, a imagem que vai rodar, contagem de instancias, habilitar o escalonamento, definir o disco, as opções de rede, gerenciamento, monitoramento e etc...
+
+### Conjunto de disponibilidade de VM's
+Dentro do mesmo datacenter temos diversos rack, onde temos os nossos dominios de falha, que são as divisões dos racks e temos os dominios de atualização, que são maquinas no mesmo rack. Exemplo de termos 6 maquinas virtuais e, 3 racks diferentes, 2 em cada. O dominio de atualização funciona da sequinte forma, criando 2 grupos de 3 maquinas, uma em cada rack, porque, se precisarmos atualizar algum recurso, podemos atualizar um dominio, enquanto o outro esta operando e quando este atualizar invertemos e atualiazamos o outro. Enquanto o dominio de falha, nos previne se algo acontecer com o rack, ecxemplo de falhar a energia desse, ainda teriamos mais 2 rack com 2 maquinas em cada para manter o serviço funcionando.
+
 ## Criação de banco de dados no Azure
 Para criar um banco de dados no portal do azure, clica no "+", criar um recurso, clica no menu banco de dados 
 Aqui temos diversas opções de banco de dados como: Azure cosmos SQL, Azure SQL, SQL Server, Mysql, Postgres, SQL Database entre outros.
@@ -47,5 +52,23 @@ O brasil conta com as regiões Brazil South (São Paulo) e Brazil Southeast (Rio
 Um grupo de recursos é uma coleção de recursos que compartilha o mesmo ciclo de vida, permissões e políticas.
 Podemos definir niveis de acesso para os usuários para poder adicionar, editar ou excluir um recurso do grupo.
 
+## Serviços de computação
+1. Maquinas virtuais
+2. Aplicativos como serviço
+3. Containers e instâncias
+4. Serviço de Kubernets do Azure (AKS)
+5. Áreas de trabalho remotas
+
+### Áreas de trabalho remotas
+Criam um ambiente completo de virtualiazação da área de trabalho sem precisar executar outros servidores de gateway
+### Containers e instâncias
+Os containeres do Azure fornecem um ambiente leve e virtualizado que não exige o gerenciamento do sistema operacional e pode responder a alterações sob demanda. Compativel com o Docker.
+Instancias de conteineres é uma oferta de Paas que executa um conteiner ou pod de conteineres no Azure.
+Não interage com o sistema operacional.
+### Serviço de Kubernets do Azure (AKS)
+Um serviço de orquestração para conteineres com arquiteturas distribuidas e grandes volumes de containeres.
+### Azure function 
+Uma oferta de Paas que da suporte a operações de computação sem servidor.
+O codigo baseado em eventos é executado quando chamado, sem exigir uma infraestrutura de servidor durante períodos inativos.
 ## Redes Virtuais
 
