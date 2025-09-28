@@ -123,15 +123,65 @@ caches, smb,nfs,ftps
 
 ## Segurança e identidade
 ### Microsoft entra ID
+O mocrosoft entra id é o serviço de gerenciamento de identidades e acesso baseado em nuvem do azure.
+1. Autenticação
+2. Login Unico (sso)
+3. Gerenciamento de aplicativos
+4. Negocios para negocios (B2B)
+5. Gerenciamento de dispositivos.
+
 Subistituto do microsoft active director(AD)
-Pode migrar
+Pode migrar do AD local
 Usuarios, grupos,  External Ids, Roles e administratiors
 Usuarios matem Audits logs, Sign-in logs e podem ser sicronizados do AD on premisses, se os usuarios forem deletados são excluidos permanentemente com 30 dias e podem ser restaurados antes disso.
+A sicronização funciona do local para nuvem, e todo usuario criado no AD local é criado automaticamente na nuvem, mas os usuarios criados na nuvem não são sincronizados para o local, aquilo criado no ambiente de nuvem permanece la.
 Permite o self-service password reset.
 Permite o contive em grupo atravez de csv
 Se não tiver um dominio cadastrado o dominio de usuario vai ficar com onmicrosoft.com
 Para criar regras personalizadas precisamos da licença Microsoft entra ID p1 ou p2.
 A sicronização do AD local para o Entra ID é atravez do Microsoft Entra Connect
+#### autenticação x autorização
+##### autenticação
+1. identifica a pessoa
+2. solicita credenciais de acesso legítimo
+3. base para princípios de identidade e controle de acesso seguros.
+##### autorização
+1. determina o nivel de acesso de uma pessoa ou serviço autenticado.
+2. define quais dados eles podem acessar e os que podem ficar com eles.
+
+por segurança a ideia é que as pessoas sempre tenham o menos nivel de acesso possivél.
+
+##### autenticação multifator (MFA)
+Fornece segurança adicional para as identidades, exigindo dois ou mais elementos para autenticação completa.
+Algo que você sabe <-> algo que você possue <-> algo que você é
+usuario e senha <-> chaves, tokens, cartões,celular <-> reconhecimento facial,biometrico
+
+##### B2B
+Utiliza o microsoft entra external id para fazer as itengrações com parceiros como o facebook, google, etc.
+Trazer a pessoa de outra empresa para acessar o nosso ambiente para fazer uma validação.
+
+##### B2C
+Azure AD B2C - Utilizar a autenticação que eu já tenho em outro provedor para me autencicar em outro serviço, ex: autencicar em determinado site com o meu login do google.
+
+#### acesso condicional
+1. associação de usuario/grupo
+2. local do ip
+3. dispositivo
+4. aplicativo
+5. detectação de risco
+utiliza essas informações para ajudar na segurança para criar regras de acesso.
+Permitir se o range do ip é da mesma localidade, se o dispositivo já esta cadastrado entre outro.
+A ideia é bloquear os niveis de acesso até a devida autenticação e autorização
+
+#### Controle de acesso baseado em função
+gerenciamento de acesso de granularidade fina.
+divida as tarefas dentro da equipe e conceda somente a quantidade de acesso de que os usuarios precisam para trabalhar
+habilite o acesso ao portal azure e o controle de acesso aos recursos.
+um controle mais rigoroso aos grupos de recursos ou grupo de asuarios, aplicativos, etc. 
+garantir que cada usuario so possa fazer o minimo para executar o seu trabalho.
+modelo de confiança zero, pensar no pior cenario, não confiar nada a ninguem e ir liberando conforme a real necessidade de uso.
+proteção completa
+segurança fisica -> identidade e acesso -> perimetro -> rede -> computação -> aplicativo -> dados
 
 ### Microsof Defender for cloud
 Alem de fazer a varredura de segurança no Azure, pode ser conectado tambem a outros serviços de nuvem como a AWS e o GCP 
