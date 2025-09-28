@@ -120,3 +120,12 @@ Mais amigavél que o azcopy
 Sicroniza os arquivos do Azure e locais de forma bidirecional.
 A camada de nuvem mantem os arquivos acessados com frenquencia no local, enquanto libera espaço.
 caches, smb,nfs,ftps
+
+## Segurança e identidade
+### Microsoft entra ID
+Subistituto do microsoft active director(AD)
+Pode migrar
+Usuarios, grupos,  External Ids, Roles e administratiors
+Usuarios matem Audits logs, Sign-in logs e podem ser sicronizados do AD on premisses, se os usuarios forem deletados são excluidos permanentemente com 30 dias e podem ser restaurados antes disso.
+Permite o self-service password reset.
+Permite o contive em grupo atravez de csv
