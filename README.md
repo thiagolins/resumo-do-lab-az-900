@@ -129,3 +129,11 @@ Usuarios, grupos,  External Ids, Roles e administratiors
 Usuarios matem Audits logs, Sign-in logs e podem ser sicronizados do AD on premisses, se os usuarios forem deletados são excluidos permanentemente com 30 dias e podem ser restaurados antes disso.
 Permite o self-service password reset.
 Permite o contive em grupo atravez de csv
+Se não tiver um dominio cadastrado o dominio de usuario vai ficar com onmicrosoft.com
+Para criar regras personalizadas precisamos da licença Microsoft entra ID p1 ou p2.
+A sicronização do AD local para o Entra ID é atravez do Microsoft Entra Connect
+
+### Microsof Defender for cloud
+Alem de fazer a varredura de segurança no Azure, pode ser conectado tambem a outros serviços de nuvem como a AWS e o GCP 
+Promove recomendações de segurança atravez de pontuações.
+Contem o modulo de Devops security, para inspecionar os codigos nos github, gitlab e enviar alertas.
