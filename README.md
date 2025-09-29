@@ -205,4 +205,6 @@ Fornece uma estimativa dos custos associados às configurações selecionadas de
 3. Ajustar suposições
      - Cobertura do software assurance (fornece beneficio hibrido do azure), levar suas licenças windows ou sql server para economizar com a aquisição de novas licenças.
 5. Exibir relatório
-   
+
+#### Cost management
+Ajuda com analise de preços, criação de alerta dos gastos e recomendações de como economizar com recursos sub utilizados.
