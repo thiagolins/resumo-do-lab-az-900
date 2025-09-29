@@ -209,4 +209,23 @@ Fornece uma estimativa dos custos associados às configurações selecionadas de
 #### Cost management
 Ajuda com analise de preços, criação de alerta dos gastos e recomendações de como economizar com recursos sub utilizados.
 
+### Gerenciamento e governança
+#### Governança e Conformidade
+1. descrever a finalidade do Azure policy
+     - O Azure policy ajuda a impor padrões organizacionais e a avaliar a conformidade em escala
+     - Ele forneçe governança e consistência de recursos com conformidade regulatória, segurança, custo e gerenciamento.
+     - Avalia e identifica os recursos do Azure que não atendem as suas politicas.
+     - Fornece definições de políticas e iniciativas integradas, em categorias como armazenamento, rede, computação, central de segurança e monitoramento.
+     - tipos de policy: non-compliant (A policy criada não afeta os recursos já existentes), remediation(cria algum cenario para informar os recursos que não cumprem a policy,ex: por uma tag) e compliant (nesse estado todos os recursos estão seguindo a policy)
+2. descrever a finalidade dos bloqueios de recursos
+   - proteja os recursos do azure de exclusão ou modificação acidental.
+   - gerenciar bloqueios na assinatura, grupo de recursos ou níveis de recursos individuais do portal do azure.
+   - bloqueios são herdados.
+   | tipos de bloqueios | ler | Atualizar | Excluir |
+   | Excluir | Sim | Sim | Não |
+   | Readonly | Sim | Não | Não |
+     
+4. descrever a finalidade do portal de confiança do serviço
+5. descrever a finalidade do microsoft purview
+
 
