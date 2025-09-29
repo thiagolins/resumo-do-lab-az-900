@@ -226,7 +226,19 @@ Ajuda com analise de preços, criação de alerta dos gastos e recomendações d
 |Excluir|Sim|Sim|Não|
 |Readonly|Sim|Não|Não|
      
-4. descrever a finalidade do portal de confiança do serviço
-5. descrever a finalidade do microsoft purview
+3. descrever a finalidade do portal de confiança do serviço
+   - Link aberto ao publico que contem quais estrategias a microsoft usa pra proteção de dados, protocolos e leis que ela mantem sobre as proteções dos dados, etc..     
+4. descrever a finalidade do microsoft purview
+   - é uma familia de soluções de governança, risco e conformidade de dados que ajuda você a obter uma única exibição unificada em seus dados. o purview reúne insights sobre seus dados locais, multinuvem e de software como serviço. compliance.
+  
+Servicetrust.microsoft.com é o portal de confiança do serviço, para você conhecer como a microsoft protege os dados e gerenciar a segurança e a confomidade de dados de nuvem da sua organização. Quais regularmentos a microsoft esta utilizando. Como: ISO, SOC, RGPD, recursos regionais, recursos financeiros por pais, etc...
 
+### Azure arc
+Tem a funcionalidade de permitir a monitoração de recursos externos ao azure, como recursos locais ou em outra nuvem
 
+### Azure Arm
+Trazendo o conceito de infraestrutura como codigo
+é como de fato o azure interpreta e executa todos os comandos que fazemos, seja ele pelo portal, ou pelas ferramentos de linha de comando.
+são arquivos json que permitem: sintaxe declarativa, resutados repetitiveis, orquestração, arquivos modulares, validação integrada, codigo exportavel
+#### Azure Bicep
+linquagem nativa da microsoft para gerenciamento mais amigavel para automação de recursos.
