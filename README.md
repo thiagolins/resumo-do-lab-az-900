@@ -244,3 +244,12 @@ são arquivos json que permitem: sintaxe declarativa, resutados repetitiveis, or
 linquagem nativa da microsoft para gerenciamento mais amigavel para automação de recursos.
 Azure.github.io/bicep
 um playground com exemplos de bicep e a tradução para o arm para diversos comandos de gerenciamento e automações
+
+### Ferramentas de monitoramento do azure
+1. Assistente do azure - analisa recursos implantados do azure e faz recomendações com base nas práticas recomendadas para otimizar as implantações do azure, para promover: confiabilidade, segurança, desempenho, custo, excelência operacional. Mostrando as recomendações e quais recursos afetados em cada item
+
+### integridade do serviço do azure
+É uma coleção de serviços que mantêm você informado sobre o status geral do Azure, status de serviços que podem afetar você e o status de recurso específico que está afetando você
+
+### azure monitor
+Maximiza a disponibilidade e o desempenho de aplicativos e serviços coletando, analisando e tomando decições com base na telemetria da nuvem e de ambientes locais
