@@ -208,3 +208,5 @@ Fornece uma estimativa dos custos associados às configurações selecionadas de
 
 #### Cost management
 Ajuda com analise de preços, criação de alerta dos gastos e recomendações de como economizar com recursos sub utilizados.
+
+
