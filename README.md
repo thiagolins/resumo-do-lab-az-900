@@ -242,3 +242,5 @@ Trazendo o conceito de infraestrutura como codigo
 são arquivos json que permitem: sintaxe declarativa, resutados repetitiveis, orquestração, arquivos modulares, validação integrada, codigo exportavel
 #### Azure Bicep
 linquagem nativa da microsoft para gerenciamento mais amigavel para automação de recursos.
+Azure.github.io/bicep
+um playground com exemplos de bicep e a tradução para o arm para diversos comandos de gerenciamento e automações
