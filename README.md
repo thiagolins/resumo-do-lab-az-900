@@ -187,3 +187,22 @@ segurança fisica -> identidade e acesso -> perimetro -> rede -> computação ->
 Alem de fazer a varredura de segurança no Azure, pode ser conectado tambem a outros serviços de nuvem como a AWS e o GCP 
 Promove recomendações de segurança atravez de pontuações.
 Contem o modulo de Devops security, para inspecionar os codigos nos github, gitlab e enviar alertas.
+
+### Marcar ou Tags
+1. Fornecem metadados aos recursos do azure.
+2. Organizam os recursos em uma taxonomia de maneira lógica.
+3. Contituem em um par chave-valor.
+4. Muito úteis para reunir informações de cobrança.
+
+### Calculadora de custo total de propriedade (TCO)
+azure.microsoft.com/pt-br/pricing/calculator
+Fornece uma estimativa dos custos associados às configurações selecionadas de produtos e serviços.
+1. Definir carga de trabalho
+     - Servidores
+     - Banco de dados
+     - Armazenamento
+     - Redes
+3. Ajustar suposições
+     - Cobertura do software assurance (fornece beneficio hibrido do azure), levar suas licenças windows ou sql server para economizar com a aquisição de novas licenças.
+5. Exibir relatório
+   
