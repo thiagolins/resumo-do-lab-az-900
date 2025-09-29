@@ -248,6 +248,7 @@ um playground com exemplos de bicep e a tradução para o arm para diversos coma
 ### Ferramentas de monitoramento do azure
 1. Assistente do azure - analisa recursos implantados do azure e faz recomendações com base nas práticas recomendadas para otimizar as implantações do azure, para promover: confiabilidade, segurança, desempenho, custo, excelência operacional. Mostrando as recomendações e quais recursos afetados em cada item
 
+### service health
 ### integridade do serviço do azure
 É uma coleção de serviços que mantêm você informado sobre o status geral do Azure, status de serviços que podem afetar você e o status de recurso específico que está afetando você
 
