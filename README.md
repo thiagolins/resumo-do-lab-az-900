@@ -221,9 +221,10 @@ Ajuda com analise de preços, criação de alerta dos gastos e recomendações d
    - proteja os recursos do azure de exclusão ou modificação acidental.
    - gerenciar bloqueios na assinatura, grupo de recursos ou níveis de recursos individuais do portal do azure.
    - bloqueios são herdados.
-   | tipos de bloqueios | ler | Atualizar | Excluir |
-   | Excluir | Sim | Sim | Não |
-   | Readonly | Sim | Não | Não |
+     
+|tipos de bloqueios|ler|Atualizar|Excluir|
+|Excluir|Sim|Sim|Não|
+|Readonly|Sim|Não|Não|
      
 4. descrever a finalidade do portal de confiança do serviço
 5. descrever a finalidade do microsoft purview
